@@ -1,5 +1,11 @@
 import React from "react";
 import "./Letter.css";
+import PropTypes from "prop-types";
+
+Letter.propTypes = {
+  Letter: PropTypes.string,
+  position: PropTypes.string,
+};
 
 function Letter({ letter, position }) {
   const letterStyle =
